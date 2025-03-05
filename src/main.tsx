@@ -10,6 +10,7 @@ import {
     UseRef,
     UseState,
     ClassComponents,
+    UseReducer,
 } from "./pages";
 
 export interface PageInterface {
@@ -48,6 +49,11 @@ const pages: PageInterface[] = [
         name: "UseRef",
         link: "/hooks/use-ref",
         element: <UseRef />,
+    },
+    {
+        name: "UseReducer",
+        link: "/hooks/use-reducer",
+        element: <UseReducer />,
     },
 ];
 
