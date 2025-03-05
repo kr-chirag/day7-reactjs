@@ -4,10 +4,13 @@ import "./index.css";
 import App from "./App.tsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavLinks from "./components/NavLinks";
-import ClassComponents from "./pages/ClassComponents";
-import UseState from "./pages/hooks/UseState";
-import UseEffect from "./pages/hooks/UseEffect";
-import UseContext from "./pages/hooks/UseContext";
+import {
+    UseEffect,
+    UseContext,
+    UseRef,
+    UseState,
+    ClassComponents,
+} from "./pages";
 
 export interface PageInterface {
     name: string;
@@ -40,6 +43,11 @@ const pages: PageInterface[] = [
         name: "UseContext",
         link: "/hooks/use-context",
         element: <UseContext />,
+    },
+    {
+        name: "UseRef",
+        link: "/hooks/use-ref",
+        element: <UseRef />,
     },
 ];
 
