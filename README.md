@@ -4,3 +4,4 @@
 -   Hooks
     -   useState
     -   useEffect
+    -   useContext -> Notes -> saved in localStorage

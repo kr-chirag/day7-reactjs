@@ -1,14 +1,14 @@
-import { ChangeEvent, FormEvent, useState } from "react";
+import { useState } from "react";
 
 function index() {
     const [data, setData] = useState<{ username: string; password: string }>({
         username: "",
         password: "",
     });
-    function handleChange(event: ChangeEvent<HTMLInputElement>): void {
+    function handleChange(event: React.ChangeEvent<HTMLInputElement>): void {
         setData({ ...data, [event.target.name]: event.target.value });
     }
-    function handleSubmit(event: FormEvent): void {
+    function handleSubmit(event: React.FormEvent): void {
         event.preventDefault();
         alert(JSON.stringify(data));
         setData({ username: "", password: "" });

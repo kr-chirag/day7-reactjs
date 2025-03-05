@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function UseEffect() {
     const [count, setCount] = useState<number>(0);
@@ -11,6 +11,7 @@ function UseEffect() {
         console.log("count incremented to:", count);
     }, [count]);
     function handleClick(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
+        e.preventDefault();
         setCount(count + 1);
     }
     return (

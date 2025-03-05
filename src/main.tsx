@@ -7,6 +7,7 @@ import NavLinks from "./components/NavLinks";
 import ClassComponents from "./pages/ClassComponents";
 import UseState from "./pages/hooks/UseState";
 import UseEffect from "./pages/hooks/UseEffect";
+import UseContext from "./pages/hooks/UseContext";
 
 export interface PageInterface {
     name: string;
@@ -34,6 +35,11 @@ const pages: PageInterface[] = [
         name: "UseEffect",
         link: "/hooks/use-effect",
         element: <UseEffect />,
+    },
+    {
+        name: "UseContext",
+        link: "/hooks/use-context",
+        element: <UseContext />,
     },
 ];
 
