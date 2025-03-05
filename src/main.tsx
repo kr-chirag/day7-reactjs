@@ -3,8 +3,9 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ClassComponents from "./pages/ClassComponents";
 import NavLinks from "./components/NavLinks";
+import ClassComponents from "./pages/ClassComponents";
+import UseState from "./pages/hooks/UseState";
 
 export interface PageInterface {
     name: string;
@@ -22,6 +23,11 @@ const pages: PageInterface[] = [
         name: "ClassComponents",
         link: "/class-components",
         element: <ClassComponents />,
+    },
+    {
+        name: "UseState",
+        link: "/hooks/use-state",
+        element: <UseState />,
     },
 ];
 
