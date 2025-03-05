@@ -7,3 +7,4 @@
     -   useContext -> Notes -> saved in localStorage
     -   useRef
     -   useReducer
+    -   useCallback

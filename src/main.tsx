@@ -11,6 +11,7 @@ import {
     UseState,
     ClassComponents,
     UseReducer,
+    UseCallaback,
 } from "./pages";
 
 export interface PageInterface {
@@ -54,6 +55,11 @@ const pages: PageInterface[] = [
         name: "UseReducer",
         link: "/hooks/use-reducer",
         element: <UseReducer />,
+    },
+    {
+        name: "UseCallaback",
+        link: "/hooks/use-callback",
+        element: <UseCallaback />,
     },
 ];
 
