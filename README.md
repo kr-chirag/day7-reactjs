@@ -1,3 +1,6 @@
 # Tasks Done
 
--   Added pages routing
+-   Pages routing
+-   Hooks
+    -   useState
+    -   useEffect

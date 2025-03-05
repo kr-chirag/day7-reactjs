@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavLinks from "./components/NavLinks";
 import ClassComponents from "./pages/ClassComponents";
 import UseState from "./pages/hooks/UseState";
+import UseEffect from "./pages/hooks/UseEffect";
 
 export interface PageInterface {
     name: string;
@@ -28,6 +29,11 @@ const pages: PageInterface[] = [
         name: "UseState",
         link: "/hooks/use-state",
         element: <UseState />,
+    },
+    {
+        name: "UseEffect",
+        link: "/hooks/use-effect",
+        element: <UseEffect />,
     },
 ];
 
