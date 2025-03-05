@@ -8,3 +8,4 @@
     -   useRef
     -   useReducer
     -   useCallback
+    -   useMemo

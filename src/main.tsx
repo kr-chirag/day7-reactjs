@@ -12,6 +12,7 @@ import {
     ClassComponents,
     UseReducer,
     UseCallaback,
+    UseMemo,
 } from "./pages";
 
 export interface PageInterface {
@@ -60,6 +61,11 @@ const pages: PageInterface[] = [
         name: "UseCallaback",
         link: "/hooks/use-callback",
         element: <UseCallaback />,
+    },
+    {
+        name: "UseMemo",
+        link: "/hooks/use-memo",
+        element: <UseMemo />,
     },
 ];
 
