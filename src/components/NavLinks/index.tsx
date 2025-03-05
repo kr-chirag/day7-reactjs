@@ -6,8 +6,8 @@ function NavLinks({ pages }: { pages: PageInterface[] }) {
     return (
         <nav className={styles.navlinks}>
             <ul>
-                {pages.map((page) => (
-                    <li>
+                {pages.map((page, idx) => (
+                    <li key={idx}>
                         <Link to={page.link}>{page.name}</Link>
                     </li>
                 ))}

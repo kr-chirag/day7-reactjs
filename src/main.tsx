@@ -30,8 +30,8 @@ createRoot(document.getElementById("root")!).render(
         <BrowserRouter>
             <NavLinks pages={pages} />
             <Routes>
-                {pages.map((page) => (
-                    <Route path={page.link} element={page.element} />
+                {pages.map((page, idx) => (
+                    <Route key={idx} path={page.link} element={page.element} />
                 ))}
             </Routes>
         </BrowserRouter>
