@@ -1,0 +1,10 @@
+.navlinks ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navlinks li {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 1.3rem;
+}
